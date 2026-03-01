@@ -4,3 +4,4 @@ export { default as Notes } from './components/Notes.svelte';
 export { default as Deck } from './components/Deck.svelte';
 export { default as Screenshot } from './components/Screenshot.svelte';
 export { default as ResourceChart } from './components/ResourceChart.svelte';
+export { default as SearchPipeline } from './components/SearchPipeline.svelte';

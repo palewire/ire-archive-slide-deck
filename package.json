@@ -45,6 +45,7 @@
 		"@fontsource/libre-franklin": "^5.2.8",
 		"d3": "^7.9.0",
 		"highlight.js": "^11.11.1",
+		"lucide-svelte": "^0.575.0",
 		"reveal.js": "^5.2.1"
 	}
 }

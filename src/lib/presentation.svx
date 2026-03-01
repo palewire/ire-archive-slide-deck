@@ -4,6 +4,7 @@
 	import Notes from '$lib/components/Notes.svelte';
 	import Screenshot from '$lib/components/Screenshot.svelte';
 	import ResourceChart from '$lib/components/ResourceChart.svelte';
+	import SearchPipeline from '$lib/components/SearchPipeline.svelte';
 </script>
 
 <Slide>
@@ -40,19 +41,13 @@ Now available in a new searchable database reserved for IRE members
 
 </Slide>
 
-<Slide animate>
+<Slide>
 
-## Auto-Animate
+# Powered by semantic search
 
-</Slide>
+<p>AI helps finds matches based the meaning of your words</p>
 
-<Slide animate>
-
-## Auto-Animate
-
-Elements transition automatically between slides.
-
-This paragraph **fades in** with the animation.
+<SearchPipeline />
 
 </Slide>
 
