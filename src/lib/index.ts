@@ -5,3 +5,5 @@ export { default as Deck } from './components/Deck.svelte';
 export { default as Screenshot } from './components/Screenshot.svelte';
 export { default as ResourceChart } from './components/ResourceChart.svelte';
 export { default as SearchPipeline } from './components/SearchPipeline.svelte';
+export { default as FeatureCard } from './components/FeatureCard.svelte';
+export { default as PersonCard } from './components/PersonCard.svelte';
