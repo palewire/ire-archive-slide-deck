@@ -49,7 +49,7 @@ Now available in a new searchable database reserved for IRE members
 
 # Powered by semantic search
 
-AI helps find matches based the meaning of your words
+AI helps find matches based on the meaning of your words
 
 <SearchPipeline />
 
