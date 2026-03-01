@@ -57,7 +57,7 @@ AI helps finds matches based the meaning of your words
 
 <Slide>
 
-# Finetune your results
+# Finetune results
 
 Controls allow you to filter and sort
 
@@ -69,7 +69,7 @@ Controls allow you to filter and sort
 
 <Slide>
 
-# Discover related resources
+# Discover new things
 
 AI recommends related documents
 
@@ -83,7 +83,7 @@ AI recommends related documents
 
 # Members only
 
-Restricted active members with an ire.org account
+Restricted to active members with an ire.org account
 
 <Screenshot url="archive.ire.org">
 	<img src="{base}/screenshots/login-wall.png" alt="IRE Resource Center login wall" />

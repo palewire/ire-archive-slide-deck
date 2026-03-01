@@ -12,11 +12,17 @@
 	import Presentation from '$lib/presentation.svx';
 
 	onMount(() => {
+		const isMobile = window.innerWidth < 768;
+
 		const deck = new Reveal({
 			plugins: [Highlight, Notes],
 			autoAnimateEasing: 'ease',
 			autoAnimateDuration: 1,
-			hash: true
+			hash: true,
+			margin: 0.04,
+			minScale: 0.5,
+			width: isMobile ? 480 : 960,
+			height: isMobile ? 700 : 700
 		});
 		deck.initialize().then(() => {
 			const images = document.querySelectorAll<HTMLImageElement>('.reveal img');

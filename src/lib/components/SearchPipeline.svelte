@@ -21,9 +21,8 @@
 <div class="not-prose flex justify-center">
 	<svg
 		viewBox="0 0 {w} {h}"
-		width={w}
-		height={h}
-		style="font-family: 'Libre Franklin', sans-serif;"
+		width="100%"
+		style="max-width: {w}px; font-family: 'Libre Franklin', sans-serif;"
 	>
 		<defs>
 			<marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">

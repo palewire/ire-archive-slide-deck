@@ -20,8 +20,8 @@
 
 <style>
 	.photo {
-		width: 140px;
-		height: 140px;
+		width: 120px;
+		height: 120px;
 		object-fit: cover;
 		margin: 0 auto;
 	}
