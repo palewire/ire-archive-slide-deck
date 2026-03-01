@@ -19,7 +19,12 @@
 </script>
 
 <div class="not-prose flex justify-center">
-	<svg viewBox="0 0 {w} {h}" width={w} height={h} style="font-family: 'Libre Franklin', sans-serif;">
+	<svg
+		viewBox="0 0 {w} {h}"
+		width={w}
+		height={h}
+		style="font-family: 'Libre Franklin', sans-serif;"
+	>
 		<defs>
 			<marker id="ah" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
 				<polygon points="0 0, 8 3, 0 6" fill="#bbb" />
@@ -29,16 +34,62 @@
 		<!-- ═══ PATHS ═══ -->
 		<line x1={qX + bw} y1={midY} x2={branchX} y2={midY} stroke={line} stroke-width="2" />
 
-		<path d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX + 50},{midY - branchH}" fill="none" stroke={line} stroke-width="2" />
-		<line x1={branchX + 50} y1={midY - branchH} x2={branchX + 50 + bw} y2={midY - branchH} stroke={line} stroke-width="2" />
-		<path d="M{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY - branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke={line} stroke-width="2" />
+		<path
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX +
+				50},{midY - branchH}"
+			fill="none"
+			stroke={line}
+			stroke-width="2"
+		/>
+		<line
+			x1={branchX + 50}
+			y1={midY - branchH}
+			x2={branchX + 50 + bw}
+			y2={midY - branchH}
+			stroke={line}
+			stroke-width="2"
+		/>
+		<path
+			d="M{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY - branchH} {combineX -
+				20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke={line}
+			stroke-width="2"
+		/>
 
-		<path d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX + 50},{midY + branchH}" fill="none" stroke={line} stroke-width="2" />
-		<line x1={branchX + 50} y1={midY + branchH} x2={branchX + 50 + bw} y2={midY + branchH} stroke={line} stroke-width="2" />
-		<path d="M{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY + branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke={line} stroke-width="2" />
+		<path
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX +
+				50},{midY + branchH}"
+			fill="none"
+			stroke={line}
+			stroke-width="2"
+		/>
+		<line
+			x1={branchX + 50}
+			y1={midY + branchH}
+			x2={branchX + 50 + bw}
+			y2={midY + branchH}
+			stroke={line}
+			stroke-width="2"
+		/>
+		<path
+			d="M{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY + branchH} {combineX -
+				20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke={line}
+			stroke-width="2"
+		/>
 
 		<line x1={combineX + bw} y1={midY} x2={rerankX} y2={midY} stroke={line} stroke-width="2" />
-		<line x1={rerankX + bw} y1={midY} x2={w} y2={midY} stroke={line} stroke-width="2" marker-end="url(#ah)" />
+		<line
+			x1={rerankX + bw}
+			y1={midY}
+			x2={w}
+			y2={midY}
+			stroke={line}
+			stroke-width="2"
+			marker-end="url(#ah)"
+		/>
 
 		<!-- ═══ ANIMATED DOTS ═══ -->
 		<circle r="4" fill="#999" opacity="0.6">
@@ -47,17 +98,37 @@
 		<path id="pQF" d="M{qX + bw},{midY} L{branchX},{midY}" fill="none" stroke="none" />
 
 		<circle r="4" fill="#999" opacity="0.6">
-			<animateMotion dur="3s" repeatCount="indefinite" begin="0.5s"><mpath href="#pTop" /></animateMotion>
+			<animateMotion dur="3s" repeatCount="indefinite" begin="0.5s"
+				><mpath href="#pTop" /></animateMotion
+			>
 		</circle>
-		<path id="pTop" d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX + 50},{midY - branchH} L{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY - branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke="none" />
+		<path
+			id="pTop"
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX +
+				50},{midY - branchH} L{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY -
+				branchH} {combineX - 20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke="none"
+		/>
 
 		<circle r="4" fill="#999" opacity="0.6">
-			<animateMotion dur="3s" repeatCount="indefinite" begin="0.7s"><mpath href="#pBot" /></animateMotion>
+			<animateMotion dur="3s" repeatCount="indefinite" begin="0.7s"
+				><mpath href="#pBot" /></animateMotion
+			>
 		</circle>
-		<path id="pBot" d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX + 50},{midY + branchH} L{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY + branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke="none" />
+		<path
+			id="pBot"
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX +
+				50},{midY + branchH} L{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY +
+				branchH} {combineX - 20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke="none"
+		/>
 
 		<circle r="4" fill="#999" opacity="0.6">
-			<animateMotion dur="1s" repeatCount="indefinite" begin="1.5s"><mpath href="#pEnd" /></animateMotion>
+			<animateMotion dur="1s" repeatCount="indefinite" begin="1.5s"
+				><mpath href="#pEnd" /></animateMotion
+			>
 		</circle>
 		<path id="pEnd" d="M{combineX + bw},{midY} L{rerankX},{midY}" fill="none" stroke="none" />
 
