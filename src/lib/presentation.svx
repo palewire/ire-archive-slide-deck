@@ -49,7 +49,7 @@ Now available in a new searchable database reserved for IRE members
 
 # Powered by semantic search
 
-AI helps finds matches based the meaning of your words
+AI helps find matches based the meaning of your words
 
 <SearchPipeline />
 
@@ -103,7 +103,7 @@ Where this thing is headed
 	{#snippet icon()}<Users size={22} strokeWidth={1.5} />{/snippet}
 </FeatureCard>
 
-<FeatureCard title="2. Complete the migration" description="Upload 10% of resources that aren't indexed yet">
+<FeatureCard title="2. Complete the migration" description="Upload the 10% of resources that aren't indexed yet">
 	{#snippet icon()}<Archive size={22} strokeWidth={1.5} />{/snippet}
 </FeatureCard>
 
