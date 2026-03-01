@@ -19,8 +19,17 @@
 	--r-heading-font-weight: 800;
 	--r-heading-text-transform: none;
 	font-weight: 300;
-	border-top: solid 20px #e5e5e5;
-	box-sizing: border-box;
+}
+
+.reveal::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 20px;
+	background: #e5e5e5;
+	z-index: 50;
 }
 
 .reveal strong,

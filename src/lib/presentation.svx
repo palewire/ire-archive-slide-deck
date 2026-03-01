@@ -57,7 +57,7 @@ AI helps find matches based on the meaning of your words
 
 <Slide>
 
-# Finetune results
+# Tune the results
 
 Controls allow you to filter and sort
 
