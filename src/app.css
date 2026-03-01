@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@import '@fontsource/libre-franklin/300.css';
+@import '@fontsource/libre-franklin/400.css';
+@import '@fontsource/libre-franklin/700.css';
+@import '@fontsource/libre-franklin/800.css';
+@import '@fontsource/jetbrains-mono';
+
+.reveal {
+	--r-main-font: 'Libre Franklin', 'Helvetica', 'Liberation Sans', Arial, sans-serif;
+	--r-heading-font: 'Libre Franklin', 'Helvetica', 'Liberation Sans', Arial, sans-serif;
+	--r-code-font: 'JetBrains Mono';
+	--r-main-font-size: 20px;
+	--r-main-color: #000;
+	--r-heading-color: #000;
+	--r-link-color: #686868;
+	--r-link-color-hover: #686868;
+	--r-heading-font-weight: 800;
+	--r-heading-text-transform: none;
+	font-weight: 300;
+	border-top: solid 20px #e5e5e5;
+}
+
+.reveal strong,
+.reveal b {
+	font-weight: 700;
+}
+
+.hljs {
+	background: none;
+}
+
+.hljs-title,
+.hljs-keyword {
+	font-weight: normal;
+}
+
+.reveal pre,
+.reveal code {
+	overflow: hidden !important;
+}
+
+.reveal pre {
+	box-shadow: none;
+}
+
+.reveal .slides img,
+.reveal .slides video,
+.reveal .slides iframe {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0;
+}
+
+.reveal .slides section h1,
+.reveal .slides section h2,
+.reveal .slides section h3 {
+	margin-top: 0;
+	margin-bottom: 0.125em;
+}
+
+.reveal .slides section p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
