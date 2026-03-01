@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	let {
 		src,
 		name,
@@ -11,7 +13,7 @@
 </script>
 
 <div class="text-center">
-	<img {src} alt={name} class="photo" />
+	<img src="{base}{src}" alt={name} class="photo rounded-md shadow-md" />
 	<div class="name">{name}</div>
 	<div class="email">{email}</div>
 </div>

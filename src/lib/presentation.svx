@@ -8,6 +8,7 @@
 	import FeatureCard from '$lib/components/FeatureCard.svelte';
 	import { Users, Archive, Mic } from 'lucide-svelte';
 	import PersonCard from '$lib/components/PersonCard.svelte';
+	import { base } from '$app/paths';
 </script>
 
 <Slide>
@@ -17,7 +18,7 @@
 The next generation of investigative knowledge sharing
 
 <Screenshot url="archive.ire.org">
-	<img src="/screenshots/ire-archive-homepage.png" alt="IRE Resource Center homepage" />
+	<img src="{base}/screenshots/ire-archive-homepage.png" alt="IRE Resource Center homepage" />
 </Screenshot>
 
 </Slide>
@@ -29,7 +30,7 @@ The next generation of investigative knowledge sharing
 Now available in a new searchable database reserved for IRE members
 
 <Screenshot url="archive.ire.org/resource/...">
-	<img src="/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
+	<img src="{base}/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
 </Screenshot>
 
 </Slide>
@@ -61,7 +62,7 @@ AI helps finds matches based the meaning of your words
 Controls allow you to filter and sort
 
 <Screenshot url="archive.ire.org/search?q=database+frame+of+mind">
-	<img src="/screenshots/search-results.png" alt="IRE Resource Center search results with controls expanded" />
+	<img src="{base}/screenshots/search-results.png" alt="IRE Resource Center search results with controls expanded" />
 </Screenshot>
 
 </Slide>
@@ -73,7 +74,7 @@ Controls allow you to filter and sort
 AI recommends related documents
 
 <Screenshot url="archive.ire.org/resource/...">
-	<img src="/screenshots/related-items.png" alt="Related items list on a resource detail page" />
+	<img src="{base}/screenshots/related-items.png" alt="Related items list on a resource detail page" />
 </Screenshot>
 
 </Slide>
@@ -85,7 +86,7 @@ AI recommends related documents
 Restricted active members with an ire.org account
 
 <Screenshot url="archive.ire.org">
-	<img src="/screenshots/login-wall.png" alt="IRE Resource Center login wall" />
+	<img src="{base}/screenshots/login-wall.png" alt="IRE Resource Center login wall" />
 </Screenshot>
 
 </Slide>
