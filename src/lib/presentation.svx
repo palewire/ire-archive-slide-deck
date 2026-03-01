@@ -86,3 +86,13 @@ Now available in a new searchable database reserved for IRE members
 </Screenshot>
 
 </Slide>
+
+<Slide>
+
+# What's next
+
+- Empower IRE staff to update the database
+- Migrate 10% of the archive that aren't indexed yet
+- Integrate thousands of audio transcripts created with AI
+
+</Slide>
