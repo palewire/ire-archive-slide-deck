@@ -20,7 +20,7 @@
 		{ category: 'Datasets', count: 50 }
 	];
 
-	const grays = ['#888', '#999', '#aaa', '#bbb', '#ccc', '#ddd'];
+	const grays = ['#eee', '#e5e5e5', '#ddd', '#ccc', '#bbb', '#aaa'];
 
 	let container: HTMLDivElement;
 
