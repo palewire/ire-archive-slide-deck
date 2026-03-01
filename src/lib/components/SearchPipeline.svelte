@@ -95,33 +95,123 @@
 
 		<!-- Query → fork: moves 0-1s, holds at end 1-6s -->
 		<circle r="4" fill="#999" opacity="0" visibility="hidden">
-			<animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.01;0.167;1" calcMode="linear"><mpath href="#pQF" /></animateMotion>
-			<animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.6;0.6;0;0" keyTimes="0;0.005;0.01;0.16;0.17;1" />
-			<animate attributeName="visibility" dur="6s" repeatCount="indefinite" values="visible;visible;hidden" keyTimes="0;0.17;1" calcMode="discrete" />
+			<animateMotion
+				dur="6s"
+				repeatCount="indefinite"
+				keyPoints="0;0;1;1"
+				keyTimes="0;0.01;0.167;1"
+				calcMode="linear"><mpath href="#pQF" /></animateMotion
+			>
+			<animate
+				attributeName="opacity"
+				dur="6s"
+				repeatCount="indefinite"
+				values="0;0;0.6;0.6;0;0"
+				keyTimes="0;0.005;0.01;0.16;0.17;1"
+			/>
+			<animate
+				attributeName="visibility"
+				dur="6s"
+				repeatCount="indefinite"
+				values="visible;visible;hidden"
+				keyTimes="0;0.17;1"
+				calcMode="discrete"
+			/>
 		</circle>
 		<path id="pQF" d="M{qX + bw},{midY} L{branchX},{midY}" fill="none" stroke="none" />
 
 		<!-- Top branch: moves 1-4s, holds 0-1s and 4-6s -->
 		<circle r="4" fill="#999" opacity="0" visibility="hidden">
-			<animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.167;0.667;1" calcMode="linear"><mpath href="#pTop" /></animateMotion>
-			<animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.6;0.6;0;0" keyTimes="0;0.167;0.66;0.667;1" />
-			<animate attributeName="visibility" dur="6s" repeatCount="indefinite" values="hidden;visible;hidden" keyTimes="0;0.167;0.667" calcMode="discrete" />
+			<animateMotion
+				dur="6s"
+				repeatCount="indefinite"
+				keyPoints="0;0;1;1"
+				keyTimes="0;0.167;0.667;1"
+				calcMode="linear"><mpath href="#pTop" /></animateMotion
+			>
+			<animate
+				attributeName="opacity"
+				dur="6s"
+				repeatCount="indefinite"
+				values="0;0.6;0.6;0;0"
+				keyTimes="0;0.167;0.66;0.667;1"
+			/>
+			<animate
+				attributeName="visibility"
+				dur="6s"
+				repeatCount="indefinite"
+				values="hidden;visible;hidden"
+				keyTimes="0;0.167;0.667"
+				calcMode="discrete"
+			/>
 		</circle>
-		<path id="pTop" d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX + 50},{midY - branchH} L{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY - branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke="none" />
+		<path
+			id="pTop"
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY - branchH} {branchX +
+				50},{midY - branchH} L{branchX + 50 + bw},{midY - branchH} C{combineX - 20},{midY -
+				branchH} {combineX - 20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke="none"
+		/>
 
 		<!-- Bottom branch: moves 1-4s, holds 0-1s and 4-6s -->
 		<circle r="4" fill="#999" opacity="0" visibility="hidden">
-			<animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.167;0.667;1" calcMode="linear"><mpath href="#pBot" /></animateMotion>
-			<animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0.6;0.6;0;0" keyTimes="0;0.167;0.66;0.667;1" />
-			<animate attributeName="visibility" dur="6s" repeatCount="indefinite" values="hidden;visible;hidden" keyTimes="0;0.167;0.667" calcMode="discrete" />
+			<animateMotion
+				dur="6s"
+				repeatCount="indefinite"
+				keyPoints="0;0;1;1"
+				keyTimes="0;0.167;0.667;1"
+				calcMode="linear"><mpath href="#pBot" /></animateMotion
+			>
+			<animate
+				attributeName="opacity"
+				dur="6s"
+				repeatCount="indefinite"
+				values="0;0.6;0.6;0;0"
+				keyTimes="0;0.167;0.66;0.667;1"
+			/>
+			<animate
+				attributeName="visibility"
+				dur="6s"
+				repeatCount="indefinite"
+				values="hidden;visible;hidden"
+				keyTimes="0;0.167;0.667"
+				calcMode="discrete"
+			/>
 		</circle>
-		<path id="pBot" d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX + 50},{midY + branchH} L{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY + branchH} {combineX - 20},{midY} {combineX},{midY}" fill="none" stroke="none" />
+		<path
+			id="pBot"
+			d="M{branchX},{midY} C{branchX + 30},{midY} {branchX + 30},{midY + branchH} {branchX +
+				50},{midY + branchH} L{branchX + 50 + bw},{midY + branchH} C{combineX - 20},{midY +
+				branchH} {combineX - 20},{midY} {combineX},{midY}"
+			fill="none"
+			stroke="none"
+		/>
 
 		<!-- Combine → Rerank: moves 4-5s, holds 0-4s and 5-6s -->
 		<circle r="4" fill="#999" opacity="0" visibility="hidden">
-			<animateMotion dur="6s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.667;0.833;1" calcMode="linear"><mpath href="#pEnd" /></animateMotion>
-			<animate attributeName="opacity" dur="6s" repeatCount="indefinite" values="0;0;0.6;0.6;0;0" keyTimes="0;0.666;0.667;0.83;0.833;1" />
-			<animate attributeName="visibility" dur="6s" repeatCount="indefinite" values="hidden;visible;hidden" keyTimes="0;0.667;0.833" calcMode="discrete" />
+			<animateMotion
+				dur="6s"
+				repeatCount="indefinite"
+				keyPoints="0;0;1;1"
+				keyTimes="0;0.667;0.833;1"
+				calcMode="linear"><mpath href="#pEnd" /></animateMotion
+			>
+			<animate
+				attributeName="opacity"
+				dur="6s"
+				repeatCount="indefinite"
+				values="0;0;0.6;0.6;0;0"
+				keyTimes="0;0.666;0.667;0.83;0.833;1"
+			/>
+			<animate
+				attributeName="visibility"
+				dur="6s"
+				repeatCount="indefinite"
+				values="hidden;visible;hidden"
+				keyTimes="0;0.667;0.833"
+				calcMode="discrete"
+			/>
 		</circle>
 		<path id="pEnd" d="M{combineX + bw},{midY} L{rerankX},{midY}" fill="none" stroke="none" />
 
