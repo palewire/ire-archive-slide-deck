@@ -47,7 +47,7 @@ Now available in a new searchable database
 
 <Slide>
 
-# Powered by semantic search
+# Semantic search
 
 AI helps find matches based on the meaning of your words
 
