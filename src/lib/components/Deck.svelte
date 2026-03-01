@@ -22,9 +22,9 @@
 			const images = document.querySelectorAll<HTMLImageElement>('.reveal img');
 			const pending = [...images].filter((img) => !img.complete);
 			if (pending.length > 0) {
-				Promise.all(
-					pending.map((img) => new Promise((r) => (img.onload = img.onerror = r)))
-				).then(() => deck.layout());
+				Promise.all(pending.map((img) => new Promise((r) => (img.onload = img.onerror = r)))).then(
+					() => deck.layout()
+				);
 			}
 		});
 	});

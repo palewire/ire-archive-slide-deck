@@ -44,11 +44,7 @@
 
 		const leaves = root.leaves() as d3.HierarchyRectangularNode<TreeRoot | Resource>[];
 
-		const svg = d3
-			.select(container)
-			.append('svg')
-			.attr('width', width)
-			.attr('height', height);
+		const svg = d3.select(container).append('svg').attr('width', width).attr('height', height);
 
 		const defs = svg.append('defs');
 

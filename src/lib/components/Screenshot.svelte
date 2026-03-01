@@ -10,7 +10,9 @@
 	} = $props();
 </script>
 
-<div class="screenshot not-prose mx-auto max-w-4xl overflow-hidden rounded-lg border border-gray-200 shadow-lg">
+<div
+	class="screenshot not-prose mx-auto max-w-4xl overflow-hidden rounded-lg border border-gray-200 shadow-lg"
+>
 	<!-- Title bar -->
 	<div class="flex items-center gap-2 bg-gray-100 px-4 py-2">
 		<div class="flex gap-1.5">
