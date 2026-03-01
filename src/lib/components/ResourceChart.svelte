@@ -214,4 +214,4 @@
 	});
 </script>
 
-<div class="not-prose mx-auto" bind:this={container}></div>
+<div class="not-prose flex justify-center" bind:this={container}></div>
