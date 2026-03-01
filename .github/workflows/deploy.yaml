@@ -1,0 +1,71 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Build site
+        run: npm run build
+
+      - name: Upload release candidate
+        uses: actions/upload-artifact@v6
+        with:
+          name: release-candidate
+          path: 'build'
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: build
+    if: ${{ github.ref_name == 'main' }}
+    steps:
+      - name: Download release candidate
+        uses: actions/download-artifact@v7
+        with:
+          name: release-candidate
+          path: ./build/
+
+      - id: configure-aws
+        name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          aws-access-key-id: ${{ secrets.DOCS_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.DOCS_AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.DOCS_AWS_REGION }}
+
+      - id: upload-to-s3
+        name: Upload documentation to Amazon S3
+        uses: datadesk/delivery-deploy-action@v1
+        with:
+          bucket: ${{ secrets.DOCS_AWS_BUCKET }}
+          base-path: ${{ secrets.DOCS_AWS_BASE_PATH }}
+          dir: ./build/
+          should-cache: false
+          use-accelerate-endpoint: false
+          public: true
