@@ -27,7 +27,7 @@ The next generation of investigative knowledge sharing
 
 # 33,449 resources
 
-Now available in a new searchable database reserved for IRE members
+Now available in a new searchable database
 
 <Screenshot url="archive.ire.org/resource/...">
 	<img src="{base}/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
