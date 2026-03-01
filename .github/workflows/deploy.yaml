@@ -65,7 +65,7 @@ jobs:
         with:
           bucket: ${{ secrets.DOCS_AWS_BUCKET }}
           base-path: ${{ secrets.DOCS_AWS_BASE_PATH }}
-          dir: ./build/
+          dir: ./docs/
           should-cache: false
           use-accelerate-endpoint: false
           public: true
