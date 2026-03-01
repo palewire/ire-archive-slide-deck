@@ -39,7 +39,7 @@ Now available in a new searchable database
 
 # What you'll find
 
-<p>Thousands of contest entries, tipsheets, transcripts and training materials</p>
+<p>Thousands of contest entries, tipsheets and training materials</p>
 
 <ResourceChart />
 
