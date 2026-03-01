@@ -9,7 +9,10 @@ const config = {
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
 		adapter: adapter({
 			fallback: 'index.html'
-		})
+		}),
+		paths: {
+			base: '/docs/ire-archive-slide-deck'
+		}
 	},
 	preprocess: [mdsvex({ highlight: false })],
 	extensions: ['.svelte', '.svx']
