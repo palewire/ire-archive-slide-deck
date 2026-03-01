@@ -6,8 +6,8 @@
 	const branchH = 70;
 	const midY = 170;
 
-	const qX = 70;
-	const branchX = 270;
+	const qX = 65;
+	const branchX = 259;
 	const combineX = 530;
 	const rerankX = 730;
 
