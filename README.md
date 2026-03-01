@@ -1,4 +1,6 @@
-A presentation marking the release of archive.ire.org at the NICAR 26 conference in Indianapolis
+A presentation marking the release of [archive.ire.org](https://archive.ire.org) at [the NICAR 26 conference in Indianapolis](https://schedules.ire.org/nicar-2026/#/session/1234)
+
+Published at [palewi.re/docs/ire-archive-slide-deck/](https://palewi.re/docs/ire-archive-slide-deck/)
 
 ## Developing
 
