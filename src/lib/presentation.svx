@@ -50,3 +50,39 @@ Now available in a new searchable database reserved for IRE members
 <SearchPipeline />
 
 </Slide>
+
+<Slide>
+
+# Finetune your results
+
+<p>Controls allow you to filter and sort</p>
+
+<Screenshot url="archive.ire.org/search?q=database+frame+of+mind">
+	<img src="/screenshots/search-results.png" alt="IRE Resource Center search results with controls expanded" />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+# Discover related resources
+
+<p>AI recommends related documents</p>
+
+<Screenshot url="archive.ire.org/resource/...">
+	<img src="/screenshots/related-items.png" alt="Related items list on a resource detail page" />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
+# Members only
+
+<p>Restricted active members with an ire.org account</p>
+
+<Screenshot url="archive.ire.org">
+	<img src="/screenshots/login-wall.png" alt="IRE Resource Center login wall" />
+</Screenshot>
+
+</Slide>
