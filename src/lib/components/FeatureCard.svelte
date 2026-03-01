@@ -12,7 +12,7 @@
 	} = $props();
 </script>
 
-<div class="flex w-full items-start gap-3 rounded-lg bg-[#e5e5e5] p-4 text-left">
+<div class="flex w-full items-start gap-3 rounded-md bg-[#e5e5e5] p-4 text-left shadow-md">
 	<div class="shrink-0 text-black/35">
 		{@render icon()}
 	</div>
