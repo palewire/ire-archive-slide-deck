@@ -104,6 +104,18 @@ Restricted to active members with an ire.org account
 
 <Slide>
 
+# Work in progress
+
+Report problems to [help@ire.org](mailto:help@ire.org)
+
+<Screenshot url="archive.ire.org/resource/...">
+	<img src="{base}/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
+</Screenshot>
+
+</Slide>
+
+<Slide>
+
 # What's next
 
 Where this thing is headed
@@ -141,17 +153,5 @@ Tell us what stinks so we can make it better
 	<PersonCard src="/derek-willis.jpg" name="Derek Willis" email="dwillis@gmail.com" />
 	<PersonCard src="/cody-winchester.jpg" name="Cody Winchester" email="cody@ire.org" />
 </div>
-
-</Slide>
-
-<Slide>
-
-# Work in progress
-
-Report problems to [help@ire.org](mailto:help@ire.org)
-
-<Screenshot url="archive.ire.org/resource/...">
-	<img src="{base}/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
-</Screenshot>
 
 </Slide>
