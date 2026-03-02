@@ -6,7 +6,7 @@
 	import ResourceChart from '$lib/components/ResourceChart.svelte';
 	import SearchPipeline from '$lib/components/SearchPipeline.svelte';
 	import FeatureCard from '$lib/components/FeatureCard.svelte';
-	import { Users, Archive, Mic } from 'lucide-svelte';
+	import { Users, Archive, Mic, BrushCleaning } from 'lucide-svelte';
 	import PersonCard from '$lib/components/PersonCard.svelte';
 	import { base } from '$app/paths';
 </script>
@@ -107,7 +107,12 @@ Where this thing is headed
 	{#snippet icon()}<Archive size={22} strokeWidth={1.5} />{/snippet}
 </FeatureCard>
 
-<FeatureCard title="3. Include audio transcripts" description="Integrate text from thousands of recordings transcribed by AI">
+<FeatureCard title="3. Tidy up" description="Reconcile imperfections in the metadata">
+	{#snippet icon()}<BrushCleaning size={22} strokeWidth={1.5} />{/snippet}
+</FeatureCard>
+
+
+<FeatureCard title="4. Add audio transcripts" description="Integrate text from thousands of recordings transcribed by AI">
 	{#snippet icon()}<Mic size={22} strokeWidth={1.5} />{/snippet}
 </FeatureCard>
 
