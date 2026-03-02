@@ -150,4 +150,8 @@ Tell us what stinks so we can make it better
 
 Report problems to [help@ire.org](mailto:help@ire.org)
 
+<Screenshot url="archive.ire.org/resource/...">
+	<img src="{base}/screenshots/detail-pages.gif" alt="IRE Resource Center detail pages" />
+</Screenshot>
+
 </Slide>
