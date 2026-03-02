@@ -10,8 +10,8 @@
 
 	const data: Field[] = [
 		{ field: 'Title', filled: 33449, missing: 0 },
-		{ field: 'Description', filled: 33377, missing: 72 },
 		{ field: 'Category', filled: 33449, missing: 0 },
+		{ field: 'Description', filled: 33377, missing: 72 },
 		{ field: 'Resource ID', filled: 33331, missing: 118 },
 		{ field: 'Authors', filled: 31381, missing: 2068 },
 		{ field: 'Year Created', filled: 24431, missing: 9018 },
