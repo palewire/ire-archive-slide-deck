@@ -4,6 +4,7 @@
 	import Notes from '$lib/components/Notes.svelte';
 	import Screenshot from '$lib/components/Screenshot.svelte';
 	import ResourceChart from '$lib/components/ResourceChart.svelte';
+	import MetadataCoverage from '$lib/components/MetadataCoverage.svelte';
 	import SearchPipeline from '$lib/components/SearchPipeline.svelte';
 	import FeatureCard from '$lib/components/FeatureCard.svelte';
 	import { Users, Archive, Mic, BrushCleaning } from 'lucide-svelte';
@@ -42,6 +43,16 @@ Now available in a new searchable database
 <p>Thousands of contest entries, tipsheets and training materials</p>
 
 <ResourceChart />
+
+</Slide>
+
+<Slide>
+
+# What we've got
+
+Some fields are better than others
+
+<MetadataCoverage />
 
 </Slide>
 
@@ -110,7 +121,6 @@ Where this thing is headed
 <FeatureCard title="3. Tidy up" description="Reconcile imperfections in the metadata">
 	{#snippet icon()}<BrushCleaning size={22} strokeWidth={1.5} />{/snippet}
 </FeatureCard>
-
 
 <FeatureCard title="4. Add audio transcripts" description="Integrate text from thousands of recordings transcribed by AI">
 	{#snippet icon()}<Mic size={22} strokeWidth={1.5} />{/snippet}
