@@ -143,3 +143,11 @@ Tell us what stinks so we can make it better
 </div>
 
 </Slide>
+
+<Slide>
+
+# Work in progress
+
+Report problems to [help@ire.org](mailto:help@ire.org)
+
+</Slide>
