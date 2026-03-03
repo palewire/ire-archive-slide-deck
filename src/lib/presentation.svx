@@ -72,7 +72,7 @@ AI helps find matches based on the meaning of your words
 
 Controls allow you to filter and sort
 
-<Screenshot url="archive.ire.org/search?q=database+frame+of+mind">
+<Screenshot url="archive.ire.org/search">
 	<img src="{base}/screenshots/search-results.png" alt="IRE Resource Center search results with controls expanded" />
 </Screenshot>
 
