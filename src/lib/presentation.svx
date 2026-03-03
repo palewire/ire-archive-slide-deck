@@ -7,7 +7,7 @@
 	import MetadataCoverage from '$lib/components/MetadataCoverage.svelte';
 	import SearchPipeline from '$lib/components/SearchPipeline.svelte';
 	import FeatureCard from '$lib/components/FeatureCard.svelte';
-	import { Users, Archive, Mic, BrushCleaning } from 'lucide-svelte';
+	import { Users, Archive, Mic, BrushCleaning, Monitor, Webhook, Network, Timer } from 'lucide-svelte';
 	import PersonCard from '$lib/components/PersonCard.svelte';
 	import { base } from '$app/paths';
 </script>
@@ -99,6 +99,40 @@ Restricted to active members with an ire.org account
 <Screenshot url="archive.ire.org">
 	<img src="{base}/screenshots/login-wall.png" alt="IRE Resource Center login wall" />
 </Screenshot>
+
+</Slide>
+
+<Slide>
+
+# The software stack
+
+How all the pieces fit
+
+<div class="not-prose mx-auto mt-4 max-w-sm space-y-4">
+
+<div>
+<div class="mb-2 text-xs font-semibold uppercase tracking-wider text-black/40">Vercel Frontend</div>
+<FeatureCard title="SvelteKit" description="Static single-page application consumes JSON data">
+	{#snippet icon()}<Monitor size={22} strokeWidth={1.5} />{/snippet}
+</FeatureCard>
+</div>
+
+<div>
+<div class="mb-2 text-xs font-semibold uppercase tracking-wider text-black/40">Fly.io Backend</div>
+<div class="flex flex-col gap-3">
+<FeatureCard title="FastAPI" description="Python application supplies JSON data">
+	{#snippet icon()}<Webhook size={22} strokeWidth={1.5} />{/snippet}
+</FeatureCard>
+<FeatureCard title="Redis" description="Caching layer enforces ire.org membership wall">
+	{#snippet icon()}<Timer size={22} strokeWidth={1.5} />{/snippet}
+</FeatureCard>
+<FeatureCard title="Qdrant" description="Vector database indexes with semantic embeddings">
+	{#snippet icon()}<Network size={22} strokeWidth={1.5} />{/snippet}
+</FeatureCard>
+</div>
+</div>
+
+</div>
 
 </Slide>
 
