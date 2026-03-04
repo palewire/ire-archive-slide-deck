@@ -75,3 +75,12 @@
 	margin-top: 0;
 	margin-bottom: 0.5em;
 }
+
+.reveal .progress {
+	background: #e5e5e5;
+	height: 6px;
+}
+
+.reveal .progress span {
+	background: #2d6a8e;
+}
