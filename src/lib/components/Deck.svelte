@@ -2,12 +2,9 @@
 	import { onMount } from 'svelte';
 
 	import Reveal from 'reveal.js';
-	import Highlight from 'reveal.js/plugin/highlight/highlight';
-	import Notes from 'reveal.js/plugin/notes/notes';
 
 	import 'reveal.js/dist/reveal.css';
 	import 'reveal.js/dist/theme/white.css';
-	import 'highlight.js/styles/github.css';
 
 	import Presentation from '$lib/presentation.svx';
 
@@ -22,7 +19,6 @@
 		const isMobile = window.innerWidth < 768;
 
 		const deck = new Reveal({
-			plugins: [Highlight, Notes],
 			autoAnimateEasing: 'ease',
 			autoAnimateDuration: 1,
 			controls,

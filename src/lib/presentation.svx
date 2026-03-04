@@ -1,7 +1,5 @@
 <script lang="ts">
 	import Slide from '$lib/components/Slide.svelte';
-	import Code from '$lib/components/Code.svelte';
-	import Notes from '$lib/components/Notes.svelte';
 	import Screenshot from '$lib/components/Screenshot.svelte';
 	import ResourceChart from '$lib/components/ResourceChart.svelte';
 	import MetadataCoverage from '$lib/components/MetadataCoverage.svelte';
