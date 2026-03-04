@@ -12,12 +12,21 @@
 	import Presentation from '$lib/presentation.svx';
 
 	onMount(() => {
+		const searchParams = new URLSearchParams(window.location.search);
+		const controlsParam = searchParams.get('controls');
+		const progressParam = searchParams.get('progress');
+
+		const controls = controlsParam ? controlsParam !== 'false' && controlsParam !== '0' : false;
+		const progress = progressParam ? progressParam !== 'false' && progressParam !== '0' : false;
+
 		const isMobile = window.innerWidth < 768;
 
 		const deck = new Reveal({
 			plugins: [Highlight, Notes],
 			autoAnimateEasing: 'ease',
 			autoAnimateDuration: 1,
+			controls,
+			progress,
 			hash: true,
 			margin: 0.04,
 			minScale: 0.5,
