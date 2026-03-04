@@ -27,7 +27,7 @@
 
 	onMount(() => {
 		if (typeof window === 'undefined') return;
-		const mq = window.matchMedia('(max-width: 640px)');
+		const mq = window.matchMedia('(max-width: 560px)');
 		const render = () => {
 			isMobile = mq.matches;
 			d3.select(container).selectAll('*').remove();
