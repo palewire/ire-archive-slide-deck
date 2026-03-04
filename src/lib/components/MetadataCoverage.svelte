@@ -126,10 +126,10 @@
 			// Percentage
 			rows
 				.append('text')
-				.attr('x', isMobile ? 8 : 8)
+				.attr('x', 8)
 				.attr('y', barY + barHeight / 2)
 				.attr('dy', '0.35em')
-				.attr('text-anchor', isMobile ? 'start' : 'start')
+				.attr('text-anchor', 'start')
 				.attr('fill', '#000')
 				.attr('font-size', isMobile ? '10px' : '12px')
 				.attr('font-family', 'Libre Franklin, sans-serif')

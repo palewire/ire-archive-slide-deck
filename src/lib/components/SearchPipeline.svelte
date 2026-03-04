@@ -164,7 +164,7 @@
 			</circle>
 			<path
 				id="mTop"
-				d={`M${mCenter},${mBranchY + mbh / 2} L${mLeftX + mbw / 2},${mBranchY + mbh / 2} L${mLeftX + mbw / 2},${mCombineY} L${mCenter},${mCombineY}`}
+				d={`M${mCenter},${mBranchY + mbh / 2} L${mLeftX + mbw / 2},${mBranchY + mbh / 2} C${mLeftX + mbw / 2},${mBranchY + mbh + 20} ${mCenter - 30},${mCombineY} ${mCenter},${mCombineY}`}
 				fill="none"
 				stroke="none"
 			/>
@@ -195,7 +195,7 @@
 			</circle>
 			<path
 				id="mBot"
-				d={`M${mCenter},${mBranchY + mbh / 2} L${mRightX + mbw / 2},${mBranchY + mbh / 2} L${mRightX + mbw / 2},${mCombineY} L${mCenter},${mCombineY}`}
+				d={`M${mCenter},${mBranchY + mbh / 2} L${mRightX + mbw / 2},${mBranchY + mbh / 2} C${mRightX + mbw / 2},${mBranchY + mbh + 20} ${mCenter + 30},${mCombineY} ${mCenter},${mCombineY}`}
 				fill="none"
 				stroke="none"
 			/>
