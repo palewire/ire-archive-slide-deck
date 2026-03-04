@@ -108,7 +108,7 @@ Restricted to active members with an ire.org account
 
 How all the pieces fit
 
-<div class="not-prose mx-auto mt-4 max-w-sm space-y-4">
+<div class="not-prose mx-auto mt-8 mb-6 max-w-sm space-y-4">
 
 <div>
 <div class="mb-2 text-xs font-semibold uppercase tracking-wider text-black/40">Vercel Frontend</div>

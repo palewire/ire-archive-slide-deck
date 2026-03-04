@@ -86,9 +86,9 @@
 			// Missing portion (right side only — avoids overlap artifact at 100%)
 			rows
 				.append('rect')
-				.attr('x', (d) => x(d.filled))
+				.attr('x', ({ filled }) => x(filled))
 				.attr('y', barY)
-				.attr('width', (d) => chartWidth - x(d.filled))
+				.attr('width', ({ filled }) => chartWidth - x(filled))
 				.attr('height', barHeight)
 				.attr('fill', '#e5e5e5');
 
@@ -97,7 +97,7 @@
 				.append('rect')
 				.attr('x', 0)
 				.attr('y', barY)
-				.attr('width', (d) => x(d.filled))
+				.attr('width', ({ filled }) => x(filled))
 				.attr('height', barHeight)
 				.attr('fill', '#aaa');
 
@@ -106,7 +106,7 @@
 				.append('rect')
 				.attr('x', 0)
 				.attr('y', barY)
-				.attr('width', (d) => x(d.filled))
+				.attr('width', ({ filled }) => x(filled))
 				.attr('height', barHeight)
 				.attr('fill', 'url(#mc-pat-diag)');
 
@@ -121,7 +121,7 @@
 				.attr('font-size', isMobile ? '11px' : '12px')
 				.attr('font-family', 'Libre Franklin, sans-serif')
 				.attr('font-weight', '700')
-				.text((d) => d.field);
+				.text(({ field }) => field);
 
 			// Percentage
 			rows
@@ -134,7 +134,7 @@
 				.attr('font-size', isMobile ? '10px' : '12px')
 				.attr('font-family', 'Libre Franklin, sans-serif')
 				.attr('font-weight', '400')
-				.text((d) => pct(d.filled / total));
+				.text(({ filled }) => pct(filled / total));
 		};
 
 		render();
